@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--a partir de aca fuentes y estilos-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="interaccion.js"></script>
+
+    <title>Carpinteria Don Soso</title>
+</head>
+
+<body>
+    <main>
+        <!--barra navegacion-->
+        <!--ver cuestion de logo en home!-->
+        <header>
+            <div class="caja-nav">
+                <img src="img/logo.png" alt="">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="presupuestos.html">Presupuestos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                     <!-- Agrega el botón de menú hamburguesa -->
+                     <div class="hamburguesa" onclick="toggleMenu()">&#9776;</div>
+                </nav>
+            </div>
+        </header>
+
+        <!--primera pantalla-->
+        <section id="banner">
+            <h3>Productos</h3>
+        </section>
+
+        <section id="caja-principal">
+            <div class="producto">
+                <div class="img-prod">
+                    <img src="img/aluminio.png" alt="">
+                </div>
+                <div class="texto-prod">
+                    <h2>Aluminio: Variedad y Calidad Garantizada</h2>
+                    <p>Descubre nuestra amplia selección de productos en aluminio, incluyendo las líneas Herrero, Modena
+                        y Modena 2. Nos enorgullecemos de trabajar exclusivamente con productos de Aluar, líder en la
+                        industria del aluminio, lo que asegura la calidad y fiabilidad de cada pieza que ofrecemos.
+                        Desde ventanas y puertas hasta elementos de decoración y soluciones para espacios interiores,
+                        nuestro compromiso es proporcionarte productos que combinen innovación, durabilidad y estilo.
+                        Confía en nosotros para encontrar la solución en aluminio que se adapte perfectamente a tus
+                        necesidades y mejore la estética y funcionalidad de tu espacio.</p>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="texto-prod">
+                    <h2>Muebles Personalizados: Estilo y Funcionalidad a tu Medida</h2>
+                    <p>Sumérgete en nuestro mundo de muebles personalizados en melamina, donde cada pieza es creada a
+                        medida para satisfacer tus necesidades y reflejar tu estilo único. Desde armarios y estanterías
+                        hasta escritorios y mesas, trabajamos diligentemente para transformar
+                        tus ideas en muebles de alta calidad que se adaptan a tu espacio.
+                        Con una amplia gama de colores y acabados disponibles, puedes personalizar cada detalle para que
+                        coincida con tu decoración y cumplir con tus expectativas. Ya sea que busques
+                        maximizar el espacio de almacenamiento o crear un área de trabajo funcional y elegante, estamos
+                        aquí para hacer tus sueños de mobiliario realidad.</p>
+                </div>
+                <div class="img-prod">
+                    <img src="img/muebles.png" alt="">
+                </div>
+            </div>
+            <div class="producto">
+                <div class="img-prod">
+                    <img src="img/madera.png" alt=""> <!--placeholder-->
+                </div>
+                <div class="texto-prod">
+                    <h2>Madera: Creando Espacios Únicos y Duraderos</h2>
+                    <p>Cada pieza es una expresión de calidad, belleza y durabilidad. Desde aberturas a medida hasta pérgolas, decks, mesas y más, nuestro equipo de expertos trabaja con una amplia variedad de maderas de alta calidad, incluyendo petiribí, guayubira, pino, incienso y muchas otras.
+                        Nos enorgullece ofrecer soluciones personalizadas que añaden calidez y carácter a cualquier espacio. Ya sea que estés buscando mejorar tu hogar con una nueva puerta de entrada, crear un oasis al aire libre con una pérgola exquisitamente diseñada, o simplemente añadir un toque de elegancia con una mesa de madera a medida, estamos aquí para hacer tus ideas realidad.
+                        Nuestra dedicación y a los materiales de la más alta calidad garantiza que cada proyecto sea realizado con atención meticulosa al detalle y un compromiso inquebrantable con la excelencia. </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Don Soso</h4>
+        <h4>Carpinteria de madera y aluminio</h4>
+        <div id="redes">
+            <a href="https://www.instagram.com/donsoso.carpinteria/" target="_blank">
+                <img src="img/ig.png" alt="instagram">
+            </a>
+            <a href="https://wa.me/5492267404783">
+                <img src="img/wpp.png" alt="">
+            </a>
+        </div>
+        <!--aca van las redes-->
+        <h4>&copy 2024</h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--a partir de aca fuentes y estilos-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="interaccion.js"></script>
+
+    <title>Carpinteria Don Soso</title>
+</head>
+
+<body>
+    <main>
+        <!--barra navegacion-->
+        <!--ver cuestion de logo en home!-->
+        <header>
+            <div class="caja-nav">
+                <img src="img/logo.png" alt="">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="presupuestos.html">Presupuestos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                     <!-- Agrega el botón de menú hamburguesa -->
+                     <div class="hamburguesa" onclick="toggleMenu()">&#9776;</div>
+                </nav>
+            </div>
+        </header>
+
+        <!--primera pantalla-->
+        <section id="banner">
+            <h3>Contacto</h3>
+        </section>
+        <section id="form">
+            <!-- Tu formulario HTML con los campos requeridos -->
+            <form action="https://formspree.io/f/xnqegpjp" method="POST">
+                <div class="caja-form">
+                    <div class="texto-form">
+                        <h3>Tenés dudas? Consultanos!</h3>
+                        <p>Completá el formulario con tus datos, nos contactaremos a la brevedad para asesorarte!</p>
+                        <div class="campos">
+                            <div class="item">
+                                <label for="nombre">Nombre</label>
+                                <input id="nombre" type="text" name="nombre" placeholder="Ingresá tu nombre y apellido"
+                                    required>
+                            </div>
+                            <div class="item">
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email" name="email" placeholder="Ingresá tu dirección de e-mail"
+                                    required>
+                            </div>
+                            <div class="item">
+                                <label for="telefono">Teléfono</label>
+                                <input id="telefono" type="tel" name="telefono"
+                                    placeholder="Ingresá tu número de teléfono">
+                            </div>
+                            <div class="item">
+                                <label for="consulta">Consulta</label>
+                                <textarea id="consulta" name="consulta" placeholder="Escribinos tu consulta"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="cta-enviar">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="img-form">
+                        <img src="img/algo.jpg" alt="">
+                    </div>
+                </div>
+            </form>
+            <p>También podes acercarte al taller en los horarios de atención o comunicarte por telefono o e-mail.</p>
+        </section>
+        <div id="mensaje-agradecimiento" style="display: none;">
+            <p>¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.</p>
+        </div>
+        <section id="contacto">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.4911490235827!2d-57.0014338!3d-37.2834919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959b60a8c02738a1%3A0xcab4e0544db0a760!2sP.%C2%BA%20143%201084%2C%20Villa%20Gesell%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1710947677400!5m2!1ses-419!2sar"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="caja-contacto">
+                <h3>Contacto</h3>
+                <p><img src="img/hora.png" alt=""> Horarios de atención: 8:30 - 12:30, 15-19hs</p>
+                <p><img src="img/tel.png" alt=""> Telefono: (02255) 15404783</p>
+                <p><img src="img/correo.png" alt="" style="opacity: 50%;"> Correo electronico: sosodonjose@gmail.com</p>
+                <p><img src="img/loc.png" alt=""> Direccion: Paseo 143 n°1084, Villa Gesell</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Don Soso</h4>
+        <h4>Carpinteria de madera y aluminio</h4>
+        <div id="redes">
+            <a href="https://www.instagram.com/donsoso.carpinteria/" target="_blank">
+                <img src="img/ig.png" alt="instagram">
+            </a>
+            <a href="https://wa.me/5492267404783">
+                <img src="img/wpp.png" alt="">
+            </a>
+        </div>
+        <!--aca van las redes-->
+        <h4>&copy 2024</h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--a partir de aca fuentes y estilos-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="interaccion.js"></script>
+
+    <title>Carpinteria Don Soso</title>
+</head>
+
+<body>
+    <main>
+        <!--barra navegacion-->
+        <!--ver cuestion de logo en home!-->
+        <header>
+            <div class="caja-nav">
+                <nav class="blanco">
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="presupuestos.html">Presupuestos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                     <!-- Agrega el botón de menú hamburguesa -->
+                     <div class="hamburguesa" onclick="toggleMenu()">&#9776;</div>
+                </nav>
+            </div>
+        </header>
+
+        <!--primera pantalla-->
+        <section id="portada">
+            <h1>Don Soso</h1>
+            <hr class="separador-bl">
+            <h2>Carpinteria de madera y aluminio</h2>
+            <div class="cta">
+                <a href="presupuestos.html">
+                    <input type="submit" value="Pedí tu presupuesto" class="cta" />
+                </a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div>
+                <h3>Don Soso</h3>
+                <hr class="separador">
+                <p class="parrafo-molesto">
+                    Somos un taller familiar que fusiona la tradición con la innovación en la creación de muebles,
+                    aberturas y una amplia gama de trabajos en madera y aluminio. Fundada hace más de tres décadas por
+                    Don Soso, nuestro patriarca y maestro artesano, nos enorgullecemos de ofrecer piezas de calidad que
+                    embellecen hogares y espacios comerciales.
+                    Con más de 30 años de experiencia, Don Soso ha perfeccionado su arte y transmitido su pasión a las
+                    generaciones futuras. Sus hijos, también expertos en el oficio con años de trayectoria, han
+                    enriquecido nuestra carpintería con su creatividad y destreza.
+                    En Don Soso, nos esforzamos por superar las expectativas de nuestros clientes en cada proyecto.
+                    Desde muebles a medida hasta aberturas que unen funcionalidad y diseño, cada trabajo es una
+                    expresión de nuestra dedicación y amor por el oficio.</p>
+            </div>
+            <div class="verde">
+                <h2>Nuestro Compromiso: Calidad y Cumplimiento</h2>
+                <div class="columnas-verde">
+                    <p>En Don Soso, nos destacamos por nuestro compromiso inquebrantable con la calidad y la puntualidad. Cada proyecto que emprendemos está respaldado por nuestra garantía de excelencia artesanal. Desde el diseño hasta la entrega, nos esforzamos por ofrecer resultados excepcionales y duraderos. Nos diferenciamos por nuestra atención meticulosa a los detalles y nuestra capacidad para cumplir con los plazos establecidos. Confía en nosotros para tus necesidades de mobiliario, aberturas y trabajos en madera y aluminio. Descubre la diferencia de trabajar con un equipo dedicado a la excelencia y el cumplimiento.</p>
+                    <img src="img/home2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="destacados">
+            <h3>Destacados</h3>
+            <hr class="separador">
+            <div class="caja-img">
+                <img src="img/madera5.jpg" alt="">
+                <img src="img/mueble1.jpg" alt="">
+                <img src="img/mueble2.jpg" alt="">
+                <img src="img/mueble6.jpg" alt="">
+                <img src="img/alum2.jpg" alt="">
+                <img src="img/mueble4.jpg" alt="">
+            </div>
+            <p><a href="galeria.html">Galeria</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Don Soso</h4>
+        <h4>Carpinteria de madera y aluminio</h4>
+        <div id="redes">
+            <a href="https://www.instagram.com/donsoso.carpinteria/" target="_blank">
+                <img src="img/ig.png" alt="instagram">
+            </a>
+            <a href="https://wa.me/5492267404783">
+                <img src="img/wpp.png" alt="">
+            </a>
+        </div>
+        <!--aca van las redes-->
+        <h4>&copy 2024</h4>
+    </footer>
+</body>
+
+</html>

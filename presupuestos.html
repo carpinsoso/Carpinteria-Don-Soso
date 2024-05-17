@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--a partir de aca fuentes y estilos-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--<script src="interaccion.js"></script>-->
+
+    <title>Carpinteria Don Soso</title>
+</head>
+
+<body>
+    <main>
+        <!--barra navegacion-->
+        <!--ver cuestion de logo en home!-->
+        <header>
+            <div class="caja-nav">
+                <img src="img/logo.png" alt="">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="presupuestos.html">Presupuestos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                     <!-- Agrega el botón de menú hamburguesa -->
+                     <div class="hamburguesa" onclick="toggleMenu()">&#9776;</div>
+                </nav>
+            </div>
+        </header>
+
+        <!--primera pantalla-->
+        <section id="banner">
+            <h3>Presupuestos</h3>
+        </section>
+
+        <section id="caja-principal">
+            <div>
+                <h4>Obtené tu Presupuesto Personalizado: El Inicio de tu Proyecto a Medida</h4>
+                <p>Al solicitar un presupuesto, puedes esperar una atención personalizada y detallada para entender tus
+                    necesidades y ofrecerte la mejor solución posible. Nos comprometemos a proporcionarte un presupuesto
+                    claro y transparente, sin compromiso, para que puedas tomar decisiones informadas sobre tu proyecto.
+                </p>
+            </div>
+            <div class="caja-drops">
+                <button class="drop">¿Cuándo voy a recibir mi presupuesto?</button>
+                <div class="contenido">
+                    <p>Nos esforzamos por proporcionar presupuestos detallados en un plazo de 5 días hábiles después
+                        de recibir tu solicitud. </p>
+                </div>
+                <button class="drop">¿El presupuesto incluye todos los costos asociados?</button>
+                <div class="contenido">
+                    <p>Sí, nuestro presupuesto cubre todos los materiales, mano de obra y cualquier otro costo asociado
+                        con tu proyecto. No hay costos ocultos.</p>
+                </div>
+                <button class="drop">¿Qué necesito proporcionar para solicitar un presupuesto?</button>
+                <div class="contenido">
+                    <p>Para brindarte un presupuesto preciso, necesitaremos detalles sobre tus necesidades, preferencias
+                        y una medida aproximada del proyecto que deseas realizar.</p>
+                </div>
+                <button class="drop">¿Puedo hacer cambios en el presupuesto una vez recibido?</button>
+                <div class="contenido">
+                    <p> Por supuesto, estamos abiertos a discutir y ajustar el presupuesto según tus necesidades y
+                        preferencias.</p>
+                </div>
+                <button class="drop">¿Cuál es el proceso para proceder con el proyecto después de recibir el
+                    presupuesto?</button>
+                <div class="contenido">
+                    <p>Una vez que estés satisfecho con el presupuesto, podemos discutir los detalles adicionales y
+                        fijar una fecha para comenzar el trabajo.</p>
+                </div>
+                <button class="drop">¿Ofrecen opciones de financiamiento o planes de pago?</button>
+                <div class="contenido">
+                    <p> Sí, podemos discutir opciones de financiamiento y planes de pago personalizados para adaptarnos
+                        a tus posibilidades. </p>
+                </div>
+            </div>
+            <p>Estas son solo algunas de las preguntas comunes que nuestros clientes suelen tener. Si tenés más
+                preguntas o necesitás más información, no dudes en ponerte en contacto con nosotros.</p>
+        </section>
+        <section id="form">
+            <!-- Tu formulario HTML con los campos requeridos -->
+            <form action="https://formspree.io/f/xnqegpjp" method="POST">
+                <div class="caja-form">
+                    <div class="texto-form">
+                        <h3>Tenés dudas? Consultanos!</h3>
+                        <p>Completá el formulario con tus datos, nos contactaremos a la brevedad para asesorarte!</p>
+                        <div class="campos">
+                            <div class="item">
+                                <label for="nombre">Nombre</label>
+                                <input id="nombre" type="text" name="nombre" placeholder="Ingresá tu nombre y apellido"
+                                    required>
+                            </div>
+                            <div class="item">
+                                <label for="email">E-mail</label>
+                                <input id="email" type="email" name="email" placeholder="Ingresá tu dirección de e-mail"
+                                    required>
+                            </div>
+                            <div class="item">
+                                <label for="telefono">Teléfono</label>
+                                <input id="telefono" type="tel" name="telefono"
+                                    placeholder="Ingresá tu número de teléfono">
+                            </div>
+                            <div class="item">
+                                <label for="consulta">Consulta</label>
+                                <textarea id="consulta" name="consulta" placeholder="Escribinos tu consulta"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="cta-enviar">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="img-form">
+                        <img src="img/algo.jpg" alt="">
+                    </div>
+                </div>
+            </form>
+            <p>También podes acercarte al taller en los horarios de atención o comunicarte por telefono o e-mail.</p>
+        </section>
+        <div id="mensaje-agradecimiento" style="display: none;">
+            <p>¡Gracias por tu consulta! Nos pondremos en contacto contigo pronto.</p>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Don Soso</h4>
+        <h4>Carpinteria de madera y aluminio</h4>
+        <div id="redes">
+            <a href="https://www.instagram.com/donsoso.carpinteria/" target="_blank">
+                <img src="img/ig.png" alt="instagram">
+            </a>
+            <a href="https://wa.me/5492267404783">
+                <img src="img/wpp.png" alt="">
+            </a>
+        </div>
+        <!--aca van las redes-->
+        <h4>&copy 2024</h4>
+    </footer>
+
+    <script src="interaccion.js"></script>
+</body>
+
+</html>

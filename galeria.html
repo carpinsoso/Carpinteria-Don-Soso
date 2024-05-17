@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--a partir de aca fuentes y estilos-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="interaccion.js"></script>
+
+    
+    <title>Carpinteria Don Soso</title>
+</head>
+
+<body>
+    <main>
+        <!--barra navegacion-->
+        <!--ver cuestion de logo en home!-->
+        <header>
+            <div class="caja-nav">
+                <img src="img/logo.png" alt="">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="presupuestos.html">Presupuestos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                     <!-- Agrega el botón de menú hamburguesa -->
+                     <div class="hamburguesa" onclick="toggleMenu()">&#9776;</div>
+                </nav>
+            </div>
+        </header>
+
+        <!--primera pantalla-->
+        <section id="banner">
+            <h3>Galeria</h3>
+        </section>
+        <section id="galeria">
+            <div class="nav-galeria">
+                <button id="btnaluminio" class="active" onclick="cambiarActivo(this.id)">Aluminio</button>
+                <button id="btnmuebles" onclick="cambiarActivo(this.id)">Muebles</button>
+                <button id="btnmadera" onclick="cambiarActivo(this.id)">Madera</button>
+            </div>
+            <div class="contenedor-galeria">
+                <div id="aluminio" >
+                    <img src="img/alum1.jpg" alt="">
+                    <img src="img/alum2.jpg" alt="">
+                    <img src="img/alum3.jpg" alt="">
+                </div>
+                <div id="muebles" hidden>
+                    <img src="img/mueble1.jpg" alt="">
+                    <img src="img/mueble2.jpg" alt="">
+                    <img src="img/mueble3.jpg" alt="">
+                    <img src="img/mueble4.jpg" alt="">
+                    <img src="img/mueble5.jpg" alt="">
+                    <img src="img/mueble6.jpg" alt="">
+                </div>
+                <div id="madera" hidden>
+                    <img src="img/madera1.jpg" alt="">
+                    <img src="img/madera2.jpg" alt="">
+                    <img src="img/madera3.jpg" alt="">
+                    <img src="img/madera4.jpg" alt="">
+                    <img src="img/madera5.jpg" alt="">
+                    <img src="img/madera6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Don Soso</h4>
+        <h4>Carpinteria de madera y aluminio</h4>
+        <div id="redes">
+            <a href="https://www.instagram.com/donsoso.carpinteria/" target="_blank">
+                <img src="img/ig.png" alt="instagram">
+            </a>
+            <a href="https://wa.me/5492267404783">
+                <img src="img/wpp.png" alt="">
+            </a>
+        </div>
+        <!--aca van las redes-->
+        <h4>&copy 2024</h4>
+    </footer>
+</body>
+
+</html>
